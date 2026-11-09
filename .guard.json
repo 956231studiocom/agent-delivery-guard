@@ -1,0 +1,31 @@
+{
+  "_comment": "自指验证：本产品自己的两个 demo 必须表现符合预期，否则这个产品就是假的。",
+  "targets": [
+    "guard.py",
+    "README.md",
+    "AGENTS.md",
+    "hooks/claude_settings.json"
+  ],
+  "reports": [
+    "README.md"
+  ],
+  "http_timeout_s": 5,
+  "claims": [
+    {
+      "claim": "坏样例必须被拦下(退出码1)",
+      "run": "python guard.py verify --path demo/broken_repo --json > _t_broken.json & exit 0",
+      "expect_exit": 0,
+      "timeout_s": 60
+    },
+    {
+      "claim": "好样例必须放行(退出码0)",
+      "run": "python guard.py verify --path demo/fixed_repo",
+      "expect_exit": 0,
+      "timeout_s": 60
+    }
+  ],
+  "anchor_allow_regex": [
+    "^2>/dev/null$",
+    "^\\.claude/settings\\.json$"
+  ]
+}

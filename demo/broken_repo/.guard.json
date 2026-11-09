@@ -1,0 +1,23 @@
+{
+  "targets": [
+    "./dist/bundle.js"
+  ],
+  "reports": [
+    "DELIVERY.md"
+  ],
+  "http_timeout_s": 3,
+  "claims": [
+    {
+      "claim": "测试全过",
+      "run": "python run_tests.py",
+      "expect_exit": 0,
+      "timeout_s": 60
+    },
+    {
+      "claim": "构建产物已生成",
+      "run": "python check_build.py",
+      "expect_exit": 0,
+      "timeout_s": 30
+    }
+  ]
+}

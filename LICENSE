@@ -1,0 +1,23 @@
+agent-delivery-guard -- Commercial License v1.0
+
+Copyright (c) 2026 956231studio.com. All rights reserved.
+
+GRANTED
+  A single purchasing entity (one company, or one individual) may:
+    - use guard.py and the accompanying files on unlimited internal projects;
+    - modify them for internal use;
+    - embed them in deliverables built for that entity's own clients.
+
+NOT GRANTED
+    - redistributing, publishing, or selling the source, modified or not, as a
+      product, template, course, or bundle;
+    - sublicensing to third parties as a standalone developer tool;
+    - removing this notice.
+
+NO WARRANTY
+  Provided "as is", without warranty of any kind. The authors are not liable for
+  any claim, damage, or loss arising from use. This tool reports on evidence it
+  can observe; it does not certify software correctness.
+
+TERMINATION
+  Breach of the NOT GRANTED section terminates the license immediately.

@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python guard.py verify --path . || (echo 'BLOCKED: delivery claims do not survive verification' && exit 1)"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python guard.py verify --path . --json"
+          }
+        ]
+      }
+    ]
+  }
+}

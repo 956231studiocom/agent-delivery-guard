@@ -1,0 +1,4 @@
+# demo/ 故意是坏的：它的行为由 .guard.json 的 claims 验证，不参与静态扫描
+demo/
+# selftest.py 内含故意构造的坏代码字面量（它就是喂给扫描器的样本），不参与静态扫描
+selftest.py
