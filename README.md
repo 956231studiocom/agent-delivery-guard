@@ -2,6 +2,11 @@
 
 **Your AI agent said "done". This makes it prove it.**
 
+> **Shipping this to clients?** The code here is free to read, run and fork. A
+> commercial license for paid client work - plus the 14-item pre-flight
+> checklist and the hook config - is **$49**:
+> https://475563839418.gumroad.com/l/covzb
+
 One file. Zero dependencies. Pure Python 3.8+ standard library.
 
 When Claude Code, Cursor, Codex or any agent hands you a "finished" change, it
